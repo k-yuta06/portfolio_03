@@ -1,0 +1,26 @@
+//Color
+$cWhite: #fff;
+$cBlack: #000;
+$cDefaultText: #222222;
+$cMainTitle: #222222;
+$cSubTitle: #F27E1A;
+$cBgGray: #EFEFEF;
+$cBgOrange: #F27E1A;
+$cBgBlack: #292929;
+$cHoverText: #F27E1A;
+$cPrivacyText: #B7B7B7;
+$cTime: #B7B7B7;
+$cborder: #D3D3D3;
+
+//Content-width
+$contentMaxWidth: 960px;
+
+//Responsive
+$sizes: xl, lg, md, sm, xs;
+$breakpoint: (
+  "xs": "screen and (min-width: 480px)",
+  "sm": "screen and (min-width: 600px)",
+  "md": "screen and (min-width: 960px)",
+  "lg": "screen and (min-width: 1280px)",
+  "xl": "screen and (min-width: 1980px)",
+) !default;

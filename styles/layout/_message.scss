@@ -1,0 +1,48 @@
+//message
+.message {
+    margin-bottom: 140px;
+    padding: 140px 4vw 0;
+
+    &__inner {
+        @extend .about__inner;
+    }
+    &__bgText {
+        @extend .about__bgText;
+        left: auto;
+        right: -16px;
+
+        @include mediaQuery('md') {
+            top: -65px;
+            right: -200px;
+            font-size: 180px;
+        }
+    }
+    &__content {
+        margin-bottom: 45px;
+
+        @include mediaQuery('sm') {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__img {
+        margin-bottom: 15px;
+
+        @include mediaQuery('sm') {
+            width: 58%;
+        }
+    }
+    &__info {
+        @include mediaQuery('sm') {
+            width: 35%;
+        }
+    }
+    &__title{
+        margin-bottom: 15px;
+    }
+    &__detail {
+        margin-bottom: 35px;
+    }
+}

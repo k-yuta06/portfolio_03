@@ -1,0 +1,71 @@
+//fv
+
+.fv {
+    width: 100%;
+    height: 410px;
+    color: $cWhite;
+    margin: 68px 0 0 0;
+    padding: 0 4vw;
+    background-image: url(../../images/top_img.jpg);
+    background-size: cover;
+    background-position: center;
+
+    @include mediaQuery('sm') {
+        height: 560px;
+    }
+
+    &__inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @extend .content-width;
+    }
+    &__info {
+        position: absolute;
+        top: 190px;
+
+        @include mediaQuery('sm') {
+            top: 140px;
+            right: 0;
+        }
+    }
+    &__text {
+        &:nth-child(1) {
+            @extend .font-lg;
+        }
+        &:nth-child(2) {
+            @extend .font-md;
+        }
+    }
+    &__news {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(50%);
+        background-color: #F27E1A;
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 15px 20px;
+
+        &__date {
+            display: block;
+            font-size: 14px;
+
+            @include mediaQuery('sm') {
+                display: inline;
+                font-size: 20px;
+            }
+        }
+        &__detail {
+            font-size: 12px;
+
+            @include mediaQuery('sm') {
+                font-size: 16px;
+            }
+        }
+        &:hover {
+            background-color: #FFA252;
+        }
+    }
+}

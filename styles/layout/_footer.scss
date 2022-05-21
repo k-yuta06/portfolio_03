@@ -1,0 +1,110 @@
+//footer
+
+.footer {
+    background-color: $cBgBlack;
+    color: $cWhite;
+    padding: 52px 4vw 0;
+    
+    &__logo {
+        width: 115px;
+        margin: 0 0 30px 45px;
+    }
+    &__inner {
+        @extend .content-width;
+        position: relative;
+
+        @include mediaQuery('sm') {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 80px;
+        }
+    }
+    &-mobile {
+        margin: 0 45px;
+        @include mediaQuery('md') {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 50%;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+    }
+    &-desktop{
+        display: none;
+
+        @include mediaQuery('md') {
+            display: flex;
+            justify-content: end;
+        } 
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 490px;
+        }
+        &__item {
+            margin-right: 30px;
+            font-size: 20px;
+
+            a:hover {
+                color: $cHoverText;
+            }
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+    &__privacy,
+    &__copyright {
+        text-align: center;
+        font-size: 12px;
+    }
+    &__privacy {
+        color: $cPrivacyText;
+        margin-bottom: 45px;
+        letter-spacing: 0.1em;
+
+        @include mediaQuery('md') {
+            text-align: left;
+            margin-bottom: 0;
+        }
+    }
+    &__scrollToTop {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $cBgOrange;
+            position: absolute;
+            top: -52px;
+            right: 0;
+            transform: translateY(-50%);
+
+            &:hover {
+                background-color: #FFA252;
+              }
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-25%) rotate(-45deg) translateY(-30%);
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border-right: 2px solid $cWhite;
+                border-top: 2px solid $cWhite;
+            }
+    }
+    &__copyright {
+        color: $cPrivacyText;
+        margin-bottom: 20px;
+    }
+}

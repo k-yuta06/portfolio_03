@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akane cording</title>
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles/css/reset.css" />
+    <link rel="stylesheet" href="styles/css/style.css" />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="header__inner">
+          <nav class="header__nav">
+            <div class="header__logo">
+              <a href="#">
+                <img src="./images/header_logo.png" alt="ヘッダーロゴ" />
+              </a>
+            </div>
+
+            <!-- desktop-menu -->
+            <ul class="header-menu">
+              <li class="header-menu__item"><a href="#about">About Us</a></li>
+              <li class="header-menu__item"><a href="#message">Message</a></li>
+              <li class="header-menu__item"><a href="#service">Service</a></li>
+              <li class="header-menu__item"><a href="#news">News</a></li>
+            </ul>
+
+            <!-- hamburger-btn -->
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <!-- mobile-menu -->
+            <div class="mobile-menu">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#about">About Us</a></li>
+                <li class="mobile-menu__item">
+                  <a href="#message">Message</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#service">Service</a>
+                </li>
+                <li class="mobile-menu__item"><a href="#news">News</a></li>
+              </ul>
+              <ul class="mobile-menu__only">
+                <li class="mobile-menu__item">
+                  <a href="#approach">Contact Us</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#approach">Recruit</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <!-- fv -->
+        <div class="fv">
+          <div class="fv__inner">
+            <div class="fv__info">
+              <p class="fv__text">
+                We make<br />
+                SUGOI service
+              </p>
+              <p class="fv__text">未来につなぐ、すごいをつくる</p>
+            </div>
+            <a href="#" class="fv__news">
+              <span class="fv__news__date">News | 2022.12.10</span>
+              <span class="fv__news__detail"
+                >パートナー企業の株式会社〇〇と連携し、すごいサービスをリリースいたしました</span
+              >
+            </a>
+          </div>
+        </div>
+
+        <!-- about -->
+        <section class="about" id="about">
+          <div class="about__inner">
+            <p class="about__bgText">SUGOI</p>
+            <div class="about__content">
+              <div class="about__img">
+                <img src="./images/about.jpg" alt="会社概要" />
+              </div>
+              <div class="about__info">
+                <h2 class="about__title section-title">About Us</h2>
+                <p class="about__detail">
+                  わたしたちはWeb制作に携わる方の業務効率化を図るサービスを作っています。
+                  お客様に「これはすごい」と言っていただけるような製品づくりを目指しています。
+                </p>
+                <div class="detail-btn">
+                  <a href="#">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Message -->
+        <section class="message" id="message">
+          <div class="message__inner">
+            <p class="message__bgText">STORY</p>
+            <div class="message__content">
+              <div class="message__img">
+                <img src="./images/message.jpg" alt="会社メッセージ" />
+              </div>
+              <div class="message__info">
+                <h2 class="message__title section-title">Message</h2>
+                <p class="message__detail">
+                  進行やデザインから開発・リリースまで多岐にわたる工程があるWeb制作になにかできること
+                  はないかと会社を立ち上げてから10年。これまでの歩みととこれからの展望をご紹介します。
+                </p>
+                <div class="detail-btn">
+                  <a href="#">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Service -->
+        <section class="service" id="service">
+          <div class="service__inner">
+            <h2 class="service__title section-title">Service</h2>
+            <div class="service__list">
+              <div class="service__item">
+                <div class="service__img01">
+                  <img src="./images/service01.png" alt="スマホ画像" />
+                </div>
+                <div class="service__info">
+                  <h3 class="section-subTitle">
+                    スケジュール管理用<br />すごいカレンダー
+                  </h3>
+                  <p class="service__detail">
+                    自分のスケジュールはもちろん、さまざまな案件のマイルストーンやメンバーのスケジュールの把握が可能なカレンダーアプリです。
+                  </p>
+                </div>
+                <span class="service__tag">NEW</span>
+              </div>
+              <div class="service__item">
+                <div class="service__img02">
+                  <img src="./images/service02.png" alt="PC画像" />
+                </div>
+                <div class="service__info">
+                  <h3 class="section-subTitle">
+                    業務効率アップ用<br />すごいソフト
+                  </h3>
+                  <p class="service__detail">
+                    自分がよく使っているアプリの順番で並べてくれるすごいソフトです。ダークモードとの切り替えも可能です。
+                  </p>
+                </div>
+              </div>
+              <div class="service__item">
+                <div class="service__img03">
+                  <img src="./images/service03.png" alt="タブレット画像" />
+                </div>
+                <div class="service__info">
+                  <h3 class="section-subTitle">
+                    タブレット専用<br />のすごいアプリ
+                  </h3>
+                  <p class="service__detail">
+                    メンバーとのコミュニケーションに活用できるタブレット専用アプリです。社内が活発になるすごいアプリです。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="service__btn detail-btn">
+              <a href="#">サービス一覧</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- news -->
+        <section class="news" id="news">
+          <div class="news__inner">
+            <h2 class="news__title section-title text-left">News</h2>
+            <a class="news__content">
+              <time class="news__time">2020.12.10</time>
+              <p class="news__detail">
+                パートナー企業の株式会社〇〇と連携し、すごいサービスをリリースいたしました
+              </p>
+              <a href="#" class="news__next"></a>
+            </a>
+            <a class="news__content">
+              <time class="news__time">2020.12.03</time>
+              <p class="news__detail">
+                子会社（〇〇〇〇株式会社）吸収合併に関するお知らせ
+              </p>
+              <a href="#" class="news__next"></a>
+            </a>
+            <a class="news__content">
+              <time class="news__time">2020.12.10</time>
+              <p class="news__detail">プライバシーポリシーを改定いたしました</p>
+              <a href="#" class="news__next"></a>
+            </a>
+          </div>
+          <div class="news__btn detail-btn"><a href="#">ニュース一覧</a></div>
+        </section>
+
+        <!-- approach -->
+        <section class="approach" id="approach">
+          <ul class="approach__list">
+            <li class="approach__item01">
+              <div class="approach__img">
+                <a href="#"><img src="./images/contact.jpg" /></a>
+              </div>
+              <p class="approach__head">Contact Us</p>
+            </li>
+            <li class="approach__item02">
+              <div class="approach__img">
+                <a href="#"><img src="./images/recrute.jpg" /></a>
+              </div>
+              <p class="approach__head">Recruit</p>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__colum">
+            <div class="footer__logo">
+              <img src="./images/footer-logo.png" alt="フッターロゴ" />
+            </div>
+            <div class="footer-mobile">
+              <ul class="footer-mobile__list">
+                <li class="footer-mobile__item"><a href="#">About Us</a></li>
+                <li class="footer-mobile__item"><a href="#">Company</a></li>
+                <li class="footer-mobile__item"><a href="#">Service</a></li>
+                <li class="footer-mobile__item"><a href="#">News</a></li>
+                <li class="footer-mobile__item"><a href="#">Contact Us</a></li>
+                <li class="footer-mobile__item"><a href="#">Recruit</a></li>
+              </ul>
+            </div>
+            <p class="footer__privacy">
+              プライバシーポリシー | 情報セキュリティ方針
+            </p>
+          </div>
+          <div class="footer__colum">
+            <div class="footer-desktop">
+              <ul class="footer-desktop__list">
+                <li class="footer-desktop__item"><a href="#">About Us</a></li>
+                <li class="footer-desktop__item"><a href="#">Company</a></li>
+                <li class="footer-desktop__item"><a href="#">Service</a></li>
+                <li class="footer-desktop__item"><a href="#">News</a></li>
+                <li class="footer-desktop__item">
+                  <a href="#"><span>Contact Us</span></a>
+                </li>
+                <li class="footer-desktop__item">
+                  <a href="#"><span>Recruit</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__scrollToTop">
+            <span></span>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="copyright">©︎2020 omsss22 All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- js -->
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

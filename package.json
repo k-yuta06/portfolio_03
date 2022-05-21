@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build:css": "sass styles/style.scss:styles/css/style.css"
+  },
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}
